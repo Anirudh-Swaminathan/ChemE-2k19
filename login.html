@@ -50,43 +50,88 @@
 <body>
    
    
-    <div class="header" id = "div01">
-        <ul id='menu'>
-            <li><a href='index.html' id="home" target="_blank">Home</a></li>
-            <div class="dropdown">			
- 			<li  id="liLOG"><button href='login.html' class="dropbtn" onclick="location.href='login.html'">Login</a></button></li>
-			    <div class="dropdown-content">
-                    <a href='login.html'>Student Login</a>
-					<a href='loginAdmin.html'>Authorized Login(*)</a>
-                </div>		
-	            </div>				
-            <li><a href='loginAdmin.html'>Authorized Login(*)</a></li>
-        </ul>
+    <div id="wrapper">
+	<div id="navMenu">
+	  
+	    <ul>
+		
+		<li id="li00"> 
+		    <a href="index.html" >Home</a>
+		</li>
+		
+		<li id="li01"> 
+		    <a href="#" >Login</a>
+		<ul id="ul01">
+		<li><a href="login.html">Student</a></li>
+		<li><a href="loginFaculty.html">Faculty</a></li>
+		<li><a href="#">Authorised Personel(*)</a></li>
+		</ul>
+		</li>
+		
+		<li id="li02"> 
+		    <a href="#" >Sign Up</a>
+		<ul id="ul02">
+		<li><a href="signUp.html">Student</a></li>
+		<li><a href="signUpFaculty.html">Faculty</a></li>
+		</ul>
+		</li>
+		 
+		</ul>
+		
+		<br class="clearFloat" />
+		
+	</div><!--end of namMenu-->
+	</div><!--end of wrapper-->
 
-	</div>
 
-<div class="container" id = "div02">
-    <section id="content">
-		<form action="">
-			<h1>STUDENT LOGIN</h1>
-			<div>
-				<input type="text" placeholder="Username" required="" id="username" />
-			</div>
-			<div>
-				<input type="password" placeholder="Password" required="" id="password" />
-			</div>
-			<div>
-				<input type="submit" value="Log in" />
-				<a href="#">Lost your password?</a>
-				<a href="#">Register</a>
-			</div>
-		</form>
-		<div class="button">
+<!--********************************LOGIN PAGE*************************-->
+
+	
+	<!--<form class="login">
+	
+	    <fieldset>
+	  
+	        <legend class="legend">Login</legend>
+	   
+	            <div class="input">
+	                <input type="email" placeholder="Email" required />
+		        <span><i class="fa fa-envelope-o"></i></span>
+		        <div>
+				
+				<div class="input">
+				    <input type="password" placeholder="Password" required />
+					<span><i class="fa fa-lock"></i></span>
+				</div>
+				
+				<button type="submit" clear="submit"><i class="fa fa-long-arrow-right"></i></button>
+				
+	    </fieldset>
+		
+	    <div class="feedback">
+		    login successful <br />
+			redirecting . . . .
 		</div>
-	</section>
-  </div>
+		
+	</form>-->
+	
+	
+<div id="lOGin">	
+	
+<form action = "login_auth1.php" method = "POST">
+  <header>    Student   Login</header>
+  <label>Roll Number <span>*</span></label>
+  <input required name = "user_name"/>
+  <div class="help">*required</div>
+  <label>Password <span>*</span></label>
+  <input type="password" required name = "password"/>
+  <div class="help">*required</div>
+  <button>Login</button>
+</form>
+	
+</div>
+	
 </body>
-<!--<script src="login.js" type='text/javascript'>
-</script>-->
-</html>
 
+<script src="login.js" type='text/javascript'>
+</script>
+</html>
