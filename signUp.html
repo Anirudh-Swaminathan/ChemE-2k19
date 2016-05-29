@@ -1,0 +1,241 @@
+<!--<!DOCTYPE html>
+<--[if lt IE 7 ]> <html lang="en" class="ie6 ielt8"> <![endif]->
+<--[if IE 7 ]>    <html lang="en" class="ie7 ielt8"> <![endif]->
+<--[if IE 8 ]>    <html lang="en" class="ie8"> <![endif]->
+<--[if (gte IE 9)|!(IE)]><-> <html lang="en"> <--<![endif]->
+<head>
+<meta charset="utf-8">
+<title>Chemical Login</title>
+<link rel="stylesheet" type="text/css" href="login.css" />
+</head>
+<body>
+<div class="container">
+	<section id="content">
+		<form action="">
+			<h1>STUDENT LOGIN</h1>
+			<div>
+				<input type="text" placeholder="Username" required="" id="username" />
+			</div>
+			<div>
+				<input type="password" placeholder="Password" required="" id="password" />
+			</div>
+			<div>
+				<input type="submit" value="Log in" />
+				<a href="#">Lost your password?</a>
+				<a href="#">Register</a>
+			</div>
+		</form><-- form ->
+		<div class="button">
+		</div><-- button ->
+	</section><-- content ->
+</div><-- container ->
+</body>
+</html>-->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.dropbtn {
+    width:100px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #3e8e41;
+}
+.dropdown {
+    position: relative;
+	height: 100px;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #000;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown a:hover {background-color: red;}
+.show {display:block;}
+</style>
+<title>Chemical Login</title>
+        <link rel="stylesheet" type="text/css" href="style1.css">
+        <!-- Latest compiled and minified CSS 
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        <!-- Latest compiled JavaScript -->
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+   
+   
+    <div id="wrapper">
+	<div id="navMenu">
+	  
+	    <ul>
+		
+		<li id="li00"> 
+		    <a href="index.html" >Home</a>
+		</li>
+		
+		<li id="li01"> 
+		    <a href="#" >Login</a>
+		<ul id="ul01">
+		<li><a href="login.html">Student</a></li>
+		<li><a href="loginFaculty.html">Faculty</a></li>
+		<li><a href="#">Authorised Personel(*)</a></li>
+		</ul>
+		</li>
+		
+		<li id="li02"> 
+		    <a href="#" >Sign Up</a>
+		<ul id="ul02">
+		<li><a href="signUp.html">Student</a></li>
+		<li><a href="signUpFaculty.html">Faculty</a></li>
+		</ul>
+		</li>
+		 
+		</ul>
+		
+		<br class="clearFloat" />
+		
+	</div><!--end of namMenu-->
+	</div><!--end of wrapper-->
+
+
+<!--********************************LOGIN PAGE*************************-->
+
+	
+	<!--<form class="login">
+	
+	    <fieldset>
+	  
+	        <legend class="legend">Login</legend>
+	   
+	            <div class="input">
+	                <input type="email" placeholder="Email" required />
+		        <span><i class="fa fa-envelope-o"></i></span>
+		        <div>
+				
+				<div class="input">
+				    <input type="password" placeholder="Password" required />
+					<span><i class="fa fa-lock"></i></span>
+				</div>
+				
+				<button type="submit" clear="submit"><i class="fa fa-long-arrow-right"></i></button>
+				
+	    </fieldset>
+		
+	    <div class="feedback">
+		    login successful <br />
+			redirecting . . . .
+		</div>
+		
+	</form>-->
+	
+	
+<div id="lOGin">	
+	
+<form action = "student_signup.php" method = "POST">
+  <header> Student Sign Up</header>
+  <label>First Name <span>*</span></label>
+  <input required name = "fname"/>
+  <div class="help">*required</div>
+  
+  
+  <label>Last Name <span>*</span></label>
+  <input required name = "lname" />
+  <div class="help">*required</div>
+  
+  <label>Username <span>*</span></label>
+  <input required name = "Username" />
+  <div class="help">*required</div>
+  
+  <label>Roll Number <span>*</span></label>
+  <input required name = "ID" />
+  <div class="help">*required</div>
+  
+ <!--<label>Year <span>*</span></label>
+  <input required />
+  <div class="help">*required</div>--
+  <label><span></span></label>
+  <div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Year</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#home">First</a>
+    <a href="#about">Second</a>
+    <a href="#contact">Pre-Final</a>
+	<a href="#contact">Final</a>
+  </div>
+  </div>
+  <div class="help">*required</div>-->
+  
+  <label>Year <span>*</span></label>
+  <input required name = "Year" />
+  <div class="help">*required</div>
+  
+  <label>email <span>*</span></label>
+  <input name = "Email"/>
+  <div class="help">*optional</div>
+  
+  <label>Contact Number <span>*</span></label>
+  <input required name = "Contact" />
+  <div class="help">*required</div>
+  
+  <label>Password <span>*</span></label>
+  <input  required name = "Password" type = "password"/>
+  <div class="help">*required</div>
+  
+    <label>Confirm Password <span>*</span></label>
+  <input  required name = "passconf" type="password"/>
+  <div class="help">*required</div>
+  
+  <button>Sign Up</button>
+</form>
+	
+</div>
+	
+	<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+	
+	
+	
+</body>
+
+<script src="login.js" type='text/javascript'>
+</script>
+</html>
